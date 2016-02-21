@@ -19,6 +19,9 @@ def sensor(request):
     if data=='apple':
         new_foodItem = FoodItem(name='apple', date='2016-2-21', expiration='2016-3-2', fat='0.3', sugar='19', calories='95')        
         new_foodItem.save()
+    if data=='banana':
+        new_foodItem = FoodItem(name='banana', date='2016-2-21', expiration='2016-3-2', fat='0.3', sugar='9', calories='83')        
+        new_foodItem.save()
     if data=='strawberry':
         new_foodItem = FoodItem(name='strawberry', date='2016-2-21', expiration='2016-2-28', fat='0.1', sugar='3.2', calories='47')        
         new_foodItem.save()
