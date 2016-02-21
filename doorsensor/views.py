@@ -13,6 +13,9 @@ def sensor(request):
     if data=='potato':
         new_foodItem = FoodItem(name='potato', date='2016-2-21', expiration='2016-2-28', fat='0.1', sugar='1.7', calories='163')
         new_foodItem.save()
+    if data=='soda':
+        new_foodItem = FoodItem(name='soda', date='2016-2-21', expiration='2016-2-28', fat='0.1', sugar='1.7', calories='163')
+        new_foodItem.save()
     if data=='onion':
         new_foodItem = FoodItem(name='onion', date='2016-2-21', expiration='2016-3-15', fat='0.1', sugar='0', calories='44')        
         new_foodItem.save()
@@ -30,6 +33,9 @@ def sensor(request):
         new_foodItem.save()
     if data=='bread':
         new_foodItem = FoodItem(name='bread', date='2016-2-21', expiration='2016-3-21', fat='0.2', sugar='1.5', calories='79')        
+        new_foodItem.save()
+    if data=='bagel':
+        new_foodItem = FoodItem(name='bagel', date='2016-2-21', expiration='2016-3-21', fat='0.2', sugar='1.5', calories='79')        
         new_foodItem.save()
     if data=='soup':
         new_foodItem = FoodItem(name='soup', date='2016-2-21', expiration='2016-8-21', fat='2.9', sugar='3.8', calories='87')        
