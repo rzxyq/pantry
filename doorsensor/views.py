@@ -47,6 +47,7 @@ def sensor(request):
 def reset(request):
     Walkout.objects.all().delete()
     Walkin.objects.all().delete()
+    FoodItem.objects.all().delete()
 
     context = {
         
